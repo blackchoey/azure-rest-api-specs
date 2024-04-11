@@ -1,0 +1,31 @@
+{
+  "parameters": {
+    "resourceGroupName": "contoso-resources",
+    "subscriptionId": "00000000-0000-0000-0000-000000000000",
+    "serviceName": "contoso",
+    "api-version": "2024-03-15-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/contoso-resources/providers/Microsoft.ApiCenter/services/contoso/portals/default",
+        "type": "Microsoft.ApiCenter/services/portals",
+        "name": "default",
+        "properties": {
+          "portalDefaultHostName": "contoso.portal.centraluseuap.azure-apicenter.ms",
+          "dataApiHostName": "contoso.data.centraluseuap.azure-apicenter.ms",
+          "title": "ContosoEUAP",
+          "authentication": {
+            "clientId": "00000000-0000-0000-0000-000000000000",
+            "tenantId": "00000000-0000-0000-0000-000000000000"
+          },
+          "enabled": false
+        },
+        "systemData": {
+          "createdAt": "2023-07-03T18:27:09.128871Z",
+          "lastModifiedAt": "2023-07-03T18:27:09.1288716Z"
+        }
+      }
+    }
+  }
+}

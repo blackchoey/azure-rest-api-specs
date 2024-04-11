@@ -1,22 +1,9 @@
 {
-  "operationId": "Services_CreateOrUpdate",
-  "title": "Services_CreateOrUpdate",
   "parameters": {
     "resourceGroupName": "contoso-resources",
     "subscriptionId": "00000000-0000-0000-0000-000000000000",
     "serviceName": "contoso",
-    "api-version": "2024-03-15-preview",
-    "resource": {
-      "properties": {},
-      "tags": {},
-      "location": "East US",
-      "identity": {
-        "type": "SystemAssigned, UserAssigned",
-        "userAssignedIdentities": {
-          "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/contoso-resources/providers/Microsoft.ManagedIdentity/userAssignedIdentities/contoso-identity": {}
-        }
-      }
-    }
+    "api-version": "2024-03-15-preview"
   },
   "responses": {
     "200": {
@@ -25,7 +12,8 @@
         "type": "Microsoft.ApiCenter/services",
         "name": "contoso",
         "properties": {
-          "provisioningState": "Succeeded"
+          "provisioningState": "Succeeded",
+          "dataApiHostname": "contoso.data.eastus.azure-apicenter.ms"
         },
         "tags": {},
         "location": "East US",

@@ -1,6 +1,4 @@
 {
-  "operationId": "Services_Get",
-  "title": "Services_Get",
   "parameters": {
     "resourceGroupName": "contoso-resources",
     "subscriptionId": "00000000-0000-0000-0000-000000000000",
@@ -14,7 +12,8 @@
         "type": "Microsoft.ApiCenter/services",
         "name": "contoso",
         "properties": {
-          "provisioningState": "Succeeded"
+          "provisioningState": "Succeeded",
+          "dataApiHostname": "contoso.data.eastus.azure-apicenter.ms"
         },
         "tags": {},
         "location": "East US",
